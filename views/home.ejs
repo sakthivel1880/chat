@@ -2,13 +2,13 @@
 <html class=''>
 
 <head>
-    <link rel="stylesheet" href="<%= rootpath %>/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<%= rootpath %>/assets/css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
 
-    <script src="<%= rootpath %>/assets/js/jquery.min.js"></script>
-    <script src="<%= rootpath %>/assets/js/bootstrap.min.js"></script>
-    <script defer src="<%= rootpath %>/node_modules/socket.io-client/dist/socket.io.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script defer src="socket.io-client/dist/socket.io.js"></script>
 </head>
 
 <body>
@@ -81,6 +81,8 @@
                     <input type="hidden" name="receiver_id" id="receiver_id" value="0">
                     <input type="hidden" name="chater" id="chater" value="<%= faculty.chater %>">
                     <input type="hidden" name="messengername" id="messengername" value="<%= faculty.learner_faculty %>">
+                    <input type="hidden" name="groupname" id="groupname" value="<%= faculty.groupname %>">
+                    <input type="hidden" name="grouptype" id="grouptype" value="<%= faculty.grouptype %>">
                     <button class="submit" id="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
                 </div>
             </div>
